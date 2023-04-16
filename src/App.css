@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #3c096c;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 100vw;
+  background-color: #240046;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+nav input {
+  height: 3rem;
+  width: 35rem;
+  border: none;
+  border-radius: 0.8rem;
+  outline: none;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.right {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
+}
+
+.card {
+  background-color: #fff;
+  height: 19rem;
+  width: 14rem;
+  border-radius: 1rem;
+}
+
+.moviesContainer {
+  display: flex;
+  gap: 1.2rem;
+  min-width: 1200px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
