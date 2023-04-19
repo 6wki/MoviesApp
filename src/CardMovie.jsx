@@ -1,20 +1,17 @@
 import React from "react";
 
-const CardMovie = () => {
+const CardMovie = ({ mov }) => {
   return (
-    <div className="container">
-      <div className="card">
-        <div className="overlay">
-          <p>اسم الفيلم : Moonlight</p>
-          <p>تاريخ الاصدار : 2023-02-10</p>
-          <p>النوع : خيال علمي</p>
-          <p>التقييم : 9.7</p>
-        </div>
-        <img
-          src="https://s.yimg.com/ny/api/res/1.2/ZzAHlDHi8a2xdBRRbruaYQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTkyOA--/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/d05a3f087fa57f6d41b865d53a42a5f5"
-          alt=""
-        />
+    <div className="card">
+      <div className="overlay">
+        <p>اسم الفيلم</p>
+        <p>{mov.original_title}</p>
+        <p>تاريخ الاصدار : {mov.release_date}</p>
+        <p>النوع : خيال علمي</p>
+        <p>عدد المقيمين : {mov.vote_count}</p>
+        <p>التقييم : {mov.release_date}</p>
       </div>
+      <img src={`https://image.tmdb.org/t/p/w500` + mov.poster_path} alt="" />
     </div>
   );
 };

@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 nav {
-  width: 100vw;
+  width: 100%;
   background-color: #240046;
   height: 5.5rem;
   display: flex;
@@ -59,26 +59,36 @@ nav input {
   position: relative;
 }
 
-.moviesContainer {
+.container {
   display: flex;
   gap: 1.2rem;
-  min-width: 1200px;
   max-width: 1200px;
   flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.moviesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .card img {
   object-fit: cover;
-  width: 100%;
+  width: 86%;
+  height: 90%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.2s;
+  top: 1rem;
+  border-radius: 1rem;
 }
 
 .card::after {
   content: "";
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, #3c096c 100%);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -101,6 +111,7 @@ nav input {
   transition: 0.2s;
   width: 100%;
   opacity: 0;
+  gap: 0.6rem;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.208);
 }
@@ -113,12 +124,34 @@ nav input {
   filter: blur(0.2rem);
   width: 110%;
   height: 110%;
+  top: 0;
+}
+
+.card:hover {
+  background-color: transparent;
 }
 
 .overlay p {
   font-family: "Cairo", sans-serif;
   font-weight: bold;
   color: #fff;
+  text-align: center;
+  padding: 0 1rem;
 }
 
-/* END FOR TODAY */
+.pagination {
+  width: 100%;
+  color: #fff;
+}
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
+  color: #fff !important;
+}
+
+.css-1v2lvtn-MuiPaginationItem-root {
+  color: #fff !important;
+}
+
+.container h2 {
+  color: #fff;
+}
