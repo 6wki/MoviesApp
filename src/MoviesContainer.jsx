@@ -3,10 +3,12 @@ import CardMovie from "./CardMovie";
 import { Pagination } from "react-bootstrap";
 import ReactPaginate from "react-paginate";
 
-const MoviesContainer = ({ movies }) => {
-  const handlePageClick = (data) => {};
+const MoviesContainer = ({ movies, getPage, count }) => {
+  const handlePageClick = (data) => {
+    console.log(data.selected + 1);
+    getPage(data.selected + 1);
+  };
 
-  const pageCount = 500;
   return (
     <div className="moviesContainer">
       <div className="container1">
@@ -23,7 +25,7 @@ const MoviesContainer = ({ movies }) => {
         nextLabel="التالي >"
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
-        pageCount={pageCount}
+        pageCount={count}
         previousLabel="< السابق"
         containerClassName="pagination justify-content-center p-3"
         pageClassName="page-item"
@@ -36,9 +38,6 @@ const MoviesContainer = ({ movies }) => {
         breakLinkClassName="page-link"
         activeClassName="active"
       />
-      {/* <Stack spacing={2}>
-        <Pagination className="pagination" count={10} color="primary" />
-      </Stack> */}
     </div>
   );
 };
