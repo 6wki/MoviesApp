@@ -141,3 +141,69 @@ nav input {
 h2 {
   color: #fff;
 }
+
+.bottom {
+  background-color: #240046;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-family: "Cairo", sans-serif !important;
+}
+
+.info h3,
+.bottom p,
+.bottom h3 {
+  color: #fff;
+  font-family: "Cairo", sans-serif !important;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 1rem;
+  background-color: #240046;
+  width: 100%;
+}
+
+.top img {
+  width: 12rem;
+  border-radius: 1rem;
+  object-fit: contain;
+}
+
+.top {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 7rem;
+  gap: 5rem;
+}
+
+.movieDetails {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tpl {
+  background-color: #240046;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0;
+}
+
+.tpl,
+.bottom,
+footer {
+  border-radius: 0.7rem;
+}
