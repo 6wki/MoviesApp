@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import MoviesContainer from "./MoviesContainer";
 import axios from "axios";
 import CardMovie from "./CardMovie";
+import MovieDetails from "./MovieDetails";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -51,9 +53,21 @@ function App() {
   return (
     <div className="App">
       <Navbar search={search} />
-      <MoviesContainer movies={movies} getPage={getPage} count={count}>
-        <CardMovie />
-      </MoviesContainer>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <MoviesContainer
+                movies={movies}
+                getPage={getPage}
+                count={count}
+              />
+            }
+          />
+          <Route path="/movie/:id" element={<MovieDetails />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
