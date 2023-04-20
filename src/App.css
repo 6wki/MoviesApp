@@ -75,6 +75,7 @@ a {
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
+  overflow: hidden;
 }
 
 .moviesContainer {
@@ -171,6 +172,7 @@ button {
 .bottom h3 {
   color: #fff;
   font-family: "Cairo", sans-serif !important;
+  text-align: right;
 }
 
 footer {
