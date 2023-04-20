@@ -4,8 +4,8 @@ import ReactPaginate from "react-paginate";
 
 const MoviesContainer = ({ movies, getPage, count }) => {
   const handlePageClick = (data) => {
-    console.log(data.selected + 1);
     getPage(data.selected + 1);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
   return (
