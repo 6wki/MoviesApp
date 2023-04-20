@@ -216,3 +216,8 @@ footer {
 footer {
   border-radius: 0.7rem;
 }
+
+.tpl,
+.bottom {
+  overflow: hidden;
+}
