@@ -1,6 +1,5 @@
 import React from "react";
 import CardMovie from "./CardMovie";
-import { Pagination } from "react-bootstrap";
 import ReactPaginate from "react-paginate";
 
 const MoviesContainer = ({ movies, getPage, count }) => {

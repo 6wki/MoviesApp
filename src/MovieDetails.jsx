@@ -1,5 +1,6 @@
 import React from "react";
 import Poster from "./assets/poster.jpg";
+import { Link } from "react-router-dom";
 
 const MovieDetails = () => {
   return (
@@ -20,7 +21,9 @@ const MovieDetails = () => {
         <p>تبسمشن مسني شمك ط شكطيمكش يكش ممن</p>
       </div>
       <footer>
-        <button>الرجوع الى الرئيسية</button>
+        <Link to="/">
+          <button>الرجوع الى الرئيسية</button>
+        </Link>
         <button>مشاهدة الفيلم</button>
       </footer>
     </div>

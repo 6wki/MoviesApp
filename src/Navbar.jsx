@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ search }) => {
   const onSearch = (word) => {
@@ -13,10 +14,12 @@ const Navbar = ({ search }) => {
         id="sh"
         placeholder="Search for anything"
       />
-      <div className="right">
-        <img src={logo} className="logo" />
-        <h1>FindMovie</h1>
-      </div>
+      <Link to="/">
+        <div className="right">
+          <img src={logo} className="logo" />
+          <h1>FindMovie</h1>
+        </div>
+      </Link>
     </nav>
   );
 };

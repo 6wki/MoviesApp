@@ -3,7 +3,6 @@ import "./App.css";
 import Navbar from "./Navbar";
 import MoviesContainer from "./MoviesContainer";
 import axios from "axios";
-import CardMovie from "./CardMovie";
 import MovieDetails from "./MovieDetails";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -37,8 +36,6 @@ function App() {
     }
   };
 
-  console.log(count);
-
   const getPage = async (page) => {
     try {
       const res = await axios.get(
@@ -52,8 +49,8 @@ function App() {
   };
   return (
     <div className="App">
-      <Navbar search={search} />
       <BrowserRouter>
+        <Navbar search={search} />
         <Routes>
           <Route
             path="/"
