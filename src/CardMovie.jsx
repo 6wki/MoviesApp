@@ -11,7 +11,6 @@ const CardMovie = ({ mov }) => {
             <p>اسم الفيلم</p>
             <p>{mov.original_title}</p>
             <p>تاريخ الاصدار : {mov.release_date}</p>
-            <p>النوع : خيال علمي</p>
             <p>عدد المقيمين : {mov.vote_count}</p>
             <p>التقييم : {mov.vote_average}</p>
           </div>
