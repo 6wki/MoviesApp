@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar search={search} />
+        <Navbar search={search} getPage={getPage} />
         <Routes>
           <Route
             path="/"
