@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import axios from "axios";
 
-const MovieDetails = () => {
+const MovieDetails = ({ getPage }) => {
   const para = useParams();
   const [movie, setMovie] = useState([]);
   const getMovieDetail = async () => {

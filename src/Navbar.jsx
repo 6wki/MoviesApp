@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./assets/logo.png";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ search }) => {
+const Navbar = ({ search, getPage }) => {
   const onSearch = (word) => {
     search(word);
   };
@@ -15,7 +15,7 @@ const Navbar = ({ search }) => {
         placeholder="Search for anything"
       />
       <Link to="/">
-        <div className="right">
+        <div onClick={getPage(0)} className="right">
           <img src={logo} className="logo" />
           <h1>FindMovie</h1>
         </div>

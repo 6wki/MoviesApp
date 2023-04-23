@@ -62,7 +62,10 @@ function App() {
               />
             }
           />
-          <Route path="/movie/:id" element={<MovieDetails />} />
+          <Route
+            path="/movie/:id"
+            element={<MovieDetails getPage={getPage} />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
