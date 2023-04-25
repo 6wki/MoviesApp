@@ -225,3 +225,20 @@ footer {
 .bottom {
   overflow: hidden;
 }
+
+/* Responsivnes */
+
+@media (max-width: 700px) {
+  nav input {
+    width: 10%;
+  }
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .card {
+    width: 10rem;
+    height: 18rem;
+  }
+}

@@ -24,7 +24,8 @@ const MoviesContainer = ({ movies, getPage, count }) => {
         nextLabel="التالي >"
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
-        pageCount={count}
+        pageCount={count > 500 ? 500 : count}
+        // I made this function cause the number of pages in the api is wrong
         previousLabel="< السابق"
         containerClassName="pagination justify-content-center p-3"
         pageClassName="page-item"
