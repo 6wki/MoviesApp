@@ -230,7 +230,9 @@ footer {
 
 @media (max-width: 700px) {
   nav input {
-    width: 10%;
+    width: 80%;
+    position: absolute;
+    top: 6.3rem;
   }
   .pagination {
     display: flex;
@@ -240,5 +242,9 @@ footer {
   .card {
     width: 10rem;
     height: 18rem;
+  }
+
+  nav {
+    margin-bottom: 5rem;
   }
 }
