@@ -247,4 +247,14 @@ footer {
   nav {
     margin-bottom: 5rem;
   }
+
+  .top {
+    width: 100%;
+    padding: 0 1rem;
+    flex-direction: column-reverse;
+  }
+
+  .info h3 {
+    text-align: center;
+  }
 }
